@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Pixel Kit MicroPython</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="menu">
+                <ul class="list-inline">
+                    <li><a href="/index.html">Index</a></li>
+                    <li><a href="/index.html#getting-started">Getting started</a></li>
+                    <li><a href="/index.html#pixel-turtle-library">Pixel Turtle</a></li>
+                    <li><a href="/index.html#reference">Reference</a></li>
+                    <li><a href="/index.html#tutorials">Tutorials</a></li>
+                </ul>
+            </div>
+            <h1 id="pixel-turtle">Pixel Turtle</h1>
+
+<h2 id="position-and-heading">Position and heading</h2>
+
+<p><img src="images/01_position_and_heading.gif" alt="" /></p>
+
+<p>If you turn on your Pixel Kit and only see a green and a yellow pixel it’s because you probably have the Pixel Turtle library installed and running on your Pixel Kit already! If that is not the case, check <a href="getting-started.html#install-libraries">How to Install and Use Pixel Kit MicroPython Libraries</a>.</p>
+
+<p>If you did see the two pixels then imagine the green pixel as if it was a turtle seen from above and the yellow pixel is where the turtle is heading for.</p>
+
+<h2 id="left-and-right">Left and right</h2>
+
+<p><img src="images/02_turning.gif" alt="" /></p>
+
+<p>You can turn the turtle around by using the commands <code class="highlighter-rouge">left()</code> and <code class="highlighter-rouge">right()</code>. If you just call <code class="highlighter-rouge">left()</code> or <code class="highlighter-rouge">right()</code> you will turn your turtle only by one “step”. If you call <code class="highlighter-rouge">left(2)</code> it’s the same as calling <code class="highlighter-rouge">left()</code> twice.</p>
+
+<p>Try this example and see what happens:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">PixelTurtle</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">left</span><span class="p">()</span>
+<span class="n">left</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">right</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="forward-and-backward">Forward and backward</h2>
+
+<p><img src="images/03_square.gif" alt="" /></p>
+
+<p>If you call <code class="highlighter-rouge">forward()</code> or <code class="highlighter-rouge">backward()</code> the turtle will step forward or backwards in the current heading direction. If you call <code class="highlighter-rouge">forward(2)</code> it will give 2 steps forward, which is the same as calling <code class="highlighter-rouge">forward()</code>
+twice.</p>
+
+<p>Try this example and see what happens:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">PixelTurtle</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">left</span><span class="p">()</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">left</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="setting-color">Setting color</h2>
+
+<p><img src="images/04_colors.gif" alt="" /></p>
+
+<p>You can change your turtle to be another color by calling <code class="highlighter-rouge">setColor(blue)</code> for example. There are 8 colors ready for you to choose: <code class="highlighter-rouge">red</code>, <code class="highlighter-rouge">green</code>, <code class="highlighter-rouge">blue</code>, <code class="highlighter-rouge">yellow</code>, <code class="highlighter-rouge">cyan</code>, <code class="highlighter-rouge">purple</code>, <code class="highlighter-rouge">black</code>, <code class="highlighter-rouge">white</code>.</p>
+
+<p>If none of those is your favourite color, you can create your own. For example if you want to create a dark blue color you would type something like <code class="highlighter-rouge">dark_blue = [0, 0, 5]</code> and then set your color <code class="highlighter-rouge">setColor(dark_blue)</code>.</p>
+
+<p>Try this example and see what happens:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">PixelTurtle</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">setColor</span><span class="p">(</span><span class="n">red</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">()</span>
+<span class="n">setColor</span><span class="p">(</span><span class="n">yellow</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">()</span>
+<span class="n">setColor</span><span class="p">(</span><span class="n">green</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">()</span>
+<span class="n">setColor</span><span class="p">(</span><span class="n">cyan</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">()</span>
+<span class="n">setColor</span><span class="p">(</span><span class="n">blue</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">()</span>
+<span class="n">setColor</span><span class="p">(</span><span class="n">purple</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">()</span>
+<span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">setColor</span><span class="p">(</span><span class="n">white</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="pen-up-and-pen-down">Pen up and pen down</h2>
+
+<p><img src="images/05_pen_up_and_down.gif" alt="" /></p>
+
+<p>You might have noticed that every time you move around with your turtle it leaves a trace behind. This is because the “pen is down”, which means wherever you go, you will be dragging the pen on the “floor”. If you want to move around without drawing you can call <code class="highlighter-rouge">penUp()</code> which will lift the pen until you call <code class="highlighter-rouge">penDown()</code> again.</p>
+
+<p>Try this example and see what happens:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">PixelTurtle</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">forward</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">penUp</span><span class="p">()</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">penDown</span><span class="p">()</span>
+<span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">right</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">penUp</span><span class="p">()</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">penDown</span><span class="p">()</span>
+<span class="n">right</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="clearing-screen">Clearing screen</h2>
+
+<p><img src="images/06_clear.gif" alt="" /></p>
+
+<p>You can clear all the drawings you have made on screen by calling <code class="highlighter-rouge">clear()</code>.</p>
+
+<p>Try this example and see what happens:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">PixelTurtle</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">forward</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">backward</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">clear</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="move">Move</h2>
+
+<p><img src="images/07_move.gif" alt="" /></p>
+
+<p>Teleport your pixel turtle <code class="highlighter-rouge">x</code> steps on the horizontal and <code class="highlighter-rouge">y</code> steps on the vertical based on your current pixel turtle positon. The steps can be negative numbers and numbers grow to the right and down.</p>
+
+<p>Try this example and see what happens:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">PixelTurtle</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">move</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">move</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">move</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">move</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="move-to">Move To</h2>
+
+<p><img src="images/08_moveto.gif" alt="" /></p>
+
+<p>Teleport your pixel turtle to the column <code class="highlighter-rouge">x</code> and line <code class="highlighter-rouge">y</code> of your Pixel Kit. The pixel on the top left corner is the row <code class="highlighter-rouge">0</code> and column <code class="highlighter-rouge">0</code>. The numbers grow to the right and down (the pixel on bottom right is row <code class="highlighter-rouge">7</code> and column <code class="highlighter-rouge">15</code>).</p>
+
+<p>Try this example and see what happens:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">PixelTurtle</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">moveTo</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">moveTo</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">moveTo</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">moveTo</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="show-and-hide-pixel">Show and Hide Pixel</h2>
+
+<p><img src="images/09_show_hide_pixel.gif" alt="" /></p>
+
+<p>Makes the pixel invisible. You can still call all the commands normally and it the pixel turtle will behave just as if it was visible, including leaving a trace on the color you set.</p>
+
+<p>Try this example and see what happens:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">PixelTurtle</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">hidePixel</span><span class="p">()</span>
+<span class="n">setColor</span><span class="p">(</span><span class="n">blue</span><span class="p">)</span>
+<span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">showPixel</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="show-and-hide-heading">Show and Hide Heading</h2>
+
+<p><img src="images/10_show_hide_heading.gif" alt="" /></p>
+
+<p>Makes the heading invisible. You can still call all the commands normally and it the pixel turtle will behave just as if it was visible, including leaving a trace on the color you set.</p>
+
+<p>Try this example and see what happens:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">PixelTurtle</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">hideHeading</span><span class="p">()</span>
+<span class="n">left</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">right</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">showHeading</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="setting-heading-color">Setting Heading Color</h2>
+
+<p><img src="images/11_heading_color.gif" alt="" /></p>
+
+<p>Imagine you want to make a drawing where the background is the same yellow as the heading or another color that makes really hard to see it. With <code class="highlighter-rouge">setHeadingColor()</code> you can set the heading color to another one so it makes a good contrast with your background.</p>
+
+<p>You can use the same colors as in <code class="highlighter-rouge">setColor()</code>: <code class="highlighter-rouge">red</code>, <code class="highlighter-rouge">green</code>, <code class="highlighter-rouge">blue</code>, <code class="highlighter-rouge">yellow</code>, <code class="highlighter-rouge">cyan</code>, <code class="highlighter-rouge">purple</code>, <code class="highlighter-rouge">black</code>, <code class="highlighter-rouge">white</code>. Or you can create your own color like <code class="highlighter-rouge">dark_blue = [0, 0, 5]</code> and then set your heading color <code class="highlighter-rouge">setHeading(dark_blue)</code>.</p>
+
+<p>Try this example and see what happens:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">PixelTurtle</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="kn">import</span> <span class="nn">PixelKit</span> <span class="k">as</span> <span class="n">kit</span>
+<span class="n">kit</span><span class="o">.</span><span class="n">setBackground</span><span class="p">(</span><span class="n">yellow</span><span class="p">)</span>
+<span class="n">kit</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
+<span class="n">setHeadingColor</span><span class="p">(</span><span class="n">green</span><span class="p">)</span>
+<span class="n">left</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">right</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="get-x-and-y">Get X and Y</h2>
+
+<p>If you want to know what is the current <code class="highlighter-rouge">x</code> or <code class="highlighter-rouge">y</code> coordinate of your pixel turtle you can call <code class="highlighter-rouge">getX()</code> and <code class="highlighter-rouge">getY()</code> on your console and you will get a number printed. If you want to use in your code you can assign the current value “returned” by <code class="highlighter-rouge">getX()</code> or <code class="highlighter-rouge">getY()</code>.</p>
+
+<p>Try this example and see what happens:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">PixelTurtle</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">penUp</span><span class="p">()</span>
+<span class="n">clear</span><span class="p">()</span>
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+	<span class="n">current_y</span> <span class="o">=</span> <span class="n">getY</span><span class="p">()</span>
+	<span class="k">if</span> <span class="n">current_y</span> <span class="o">==</span> <span class="mi">7</span> <span class="ow">or</span> <span class="n">current_y</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+		<span class="n">left</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+		<span class="n">forward</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="aliases">Aliases</h2>
+
+<p>If you get tired of writing the same thing over and over and over you might use the aliases for each command. Aliases are other words for the same command, in this case the aliases are the first letters of the command:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">sc()</code> is for <code class="highlighter-rouge">setColor()</code></li>
+  <li><code class="highlighter-rouge">shc()</code> is for <code class="highlighter-rouge">setHeadingColor()</code></li>
+  <li><code class="highlighter-rouge">mt()</code> is for <code class="highlighter-rouge">moveTo()</code></li>
+  <li><code class="highlighter-rouge">m()</code> is for <code class="highlighter-rouge">move()</code></li>
+  <li><code class="highlighter-rouge">sp()</code> is for <code class="highlighter-rouge">showPixel()</code></li>
+  <li><code class="highlighter-rouge">hp()</code> is for <code class="highlighter-rouge">hidePixel()</code></li>
+  <li><code class="highlighter-rouge">sh()</code> is for <code class="highlighter-rouge">showHeading()</code></li>
+  <li><code class="highlighter-rouge">hh()</code> is for <code class="highlighter-rouge">hideHeading()</code></li>
+  <li><code class="highlighter-rouge">pd()</code> is for <code class="highlighter-rouge">penDown()</code></li>
+  <li><code class="highlighter-rouge">pu()</code> is for <code class="highlighter-rouge">penUp()</code></li>
+  <li><code class="highlighter-rouge">f()</code> is for <code class="highlighter-rouge">forward()</code></li>
+  <li><code class="highlighter-rouge">b()</code> is for <code class="highlighter-rouge">backward()</code></li>
+  <li><code class="highlighter-rouge">l()</code> is for <code class="highlighter-rouge">left()</code></li>
+  <li><code class="highlighter-rouge">r()</code> is for <code class="highlighter-rouge">right()</code></li>
+  <li><code class="highlighter-rouge">c()</code> is for <code class="highlighter-rouge">clear()</code></li>
+</ul>
+
+        </div>
+    </body>
+</html>

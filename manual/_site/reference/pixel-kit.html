@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Pixel Kit MicroPython</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="menu">
+                <ul class="list-inline">
+                    <li><a href="/index.html">Index</a></li>
+                    <li><a href="/index.html#getting-started">Getting started</a></li>
+                    <li><a href="/index.html#pixel-turtle-library">Pixel Turtle</a></li>
+                    <li><a href="/index.html#reference">Reference</a></li>
+                    <li><a href="/index.html#tutorials">Tutorials</a></li>
+                </ul>
+            </div>
+            <h1 id="pixel-kit-list-of-commands">Pixel Kit List of Commands</h1>
+
+<p><code class="highlighter-rouge">dialValue</code>:</p>
+
+<p>Stores the last dial value. This value is always between <code class="highlighter-rouge">0</code> and <code class="highlighter-rouge">4095</code></p>
+
+<hr />
+
+<p><code class="highlighter-rouge">isPressingUp</code>:</p>
+
+<p>Stores if the joystick up is being pressed. This value is <code class="highlighter-rouge">False</code> or <code class="highlighter-rouge">True</code></p>
+
+<hr />
+
+<p><code class="highlighter-rouge">isPressingDown</code>:</p>
+
+<p>Stores if the joystick down is being pressed. This value is <code class="highlighter-rouge">False</code> or <code class="highlighter-rouge">True</code></p>
+
+<hr />
+
+<p><code class="highlighter-rouge">isPressingLeft</code>:</p>
+
+<p>Stores if the joystick left is being pressed. This value is <code class="highlighter-rouge">False</code> or <code class="highlighter-rouge">True</code></p>
+
+<hr />
+
+<p><code class="highlighter-rouge">isPressingRight</code>:</p>
+
+<p>Stores if the joystick right is being pressed. This value is <code class="highlighter-rouge">False</code> or <code class="highlighter-rouge">True</code></p>
+
+<hr />
+
+<p><code class="highlighter-rouge">isPressingClick</code>:</p>
+
+<p>Stores if the joystick click is being pressed. This value is <code class="highlighter-rouge">False</code> or <code class="highlighter-rouge">True</code></p>
+
+<hr />
+
+<p><code class="highlighter-rouge">isPressingA</code>:</p>
+
+<p>Stores if the button A is being pressed. This value is <code class="highlighter-rouge">False</code> or <code class="highlighter-rouge">True</code></p>
+
+<hr />
+
+<p><code class="highlighter-rouge">isPressingB</code>:</p>
+
+<p>Stores if the button B is being pressed. This value is <code class="highlighter-rouge">False</code> or <code class="highlighter-rouge">True</code></p>
+
+<hr />
+
+<p><code class="highlighter-rouge">checkControls()</code>:</p>
+
+<p>Update all button values and dial value</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">checkJoystick()</code>:</p>
+
+<p>Update only joystick buttons values</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">checkButtons()</code>:</p>
+
+<p>Update only buttons values</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">checkDial()</code>:</p>
+
+<p>Update only dial value</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">onJoystickUp()</code>:</p>
+
+<p>Called when joystick up is pressed</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">onJoystickDown()</code>:</p>
+
+<p>Called when joystick down is pressed</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">onJoystickLeft()</code>:</p>
+
+<p>Called when joystick left is pressed</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">onJoystickRight()</code>:</p>
+
+<p>Called when joystick right is pressed</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">onJoystickClick()</code>:</p>
+
+<p>Called when joystick click is pressed</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">onButtonA()</code>:</p>
+
+<p>Called when button A is pressed</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">onButtonB()</code>:</p>
+
+<p>Called when button B is pressed</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">onDial(dialValue)</code>:</p>
+
+<p>Called when dial value has changed</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">setPixel(x, y, color)</code>:</p>
+
+<p>Set the pixel on <code class="highlighter-rouge">x</code>, <code class="highlighter-rouge">y</code> with the <code class="highlighter-rouge">color</code> in the format <code class="highlighter-rouge">[red, green, blue]</code> where <code class="highlighter-rouge">red</code>, <code class="highlighter-rouge">green</code> and <code class="highlighter-rouge">blue</code> are the amount of those colors you want in our final color. Values can be between <code class="highlighter-rouge">0</code> and <code class="highlighter-rouge">100</code> but after <code class="highlighter-rouge">20</code> you might need eye protection.</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">setBackground(color)</code>:</p>
+
+<p>Set background to <code class="highlighter-rouge">color</code></p>
+
+<hr />
+
+<p><code class="highlighter-rouge">clear()</code>:</p>
+
+<p>Set background to black (turn off all LEDs)</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">render()</code>:</p>
+
+<p>Render the pixels on the screen. Previous drawing methods won’t change the LEDs until <code class="highlighter-rouge">render()</code> is called.</p>
+
+        </div>
+    </body>
+</html>
