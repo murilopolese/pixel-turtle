@@ -24,7 +24,7 @@ When you turn your Pixel Kit on we can see a green dot with a yellow dot on top 
 
 Now that we know we can mix red, green and blue there is one question left? How can we describe how much of each color should we add to our color? To begin with we need to understand that Pixel Turtle doesn't understand if we say "a tiny bit", "a little bit more" or "almost nothing" but it is really good with numbers! But what numbers? Can we use any numbers we like? Nope.
 
-Pixel Turtle can only make colors with numbers from `0` to `100` and to be honest it doesn't like any numbers above `20` so we'll be creating colors with a mix of red, green and blue and we'll measure how much of each color with numbers from `0` to `20`. For example I like `5` for red, `10` for green and `12` for blue. But how do we tell the Pixel Turtle we want that color?
+Pixel Turtle can only make colors with numbers from `0` to `255` and to be honest it doesn't like any numbers above `20` so we'll be creating colors with a mix of red, green and blue and we'll measure how much of each color with numbers from `0` to `20`. For example I like `5` for red, `10` for green and `12` for blue. But how do we tell the Pixel Turtle we want that color?
 
 ## Creating Pixel Colors
 

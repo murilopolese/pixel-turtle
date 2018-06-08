@@ -16,7 +16,128 @@
                     <li><a href="/index.html#tutorials">Tutorials</a></li>
                 </ul>
             </div>
-            <h1 id="new-words">New Words</h1>
+            <h1 id="learning-new-words">Learning New Words</h1>
+
+<p>How many words do you know? Do you remember what all those words mean and who taught you them? It’s hard isn’t it? How come we can learn entire new words using only words we already know?</p>
+
+<p>One thing is for sure, it’s way easier to teach Pixel Turtle a new word than to teach another person a new word! Actually when you think about it sometimes it’s way easier to understand new words if we explain them as if we were explaining to the Pixel Turtle.</p>
+
+<h2 id="defining-words">Defining Words</h2>
+
+<p>When you turn your Pixel Kit on for the first time you haven’t taught Pixel Turtle any words and yet it does understand some words like <code class="highlighter-rouge">forward()</code> or <code class="highlighter-rouge">right()</code> and <code class="highlighter-rouge">penUp()</code>. We won’t go much further on how come Pixel Turtle is born knowing them but we’ll focus on how to teach new words it doesn’t know yet.</p>
+
+<p>As we learnt on <a href="./pixel-turtle-wandering.html#how-to-ask-pixel-turtle-to-move">Pixel Wandering</a>, we can check what words Pixel Turtle knows by trying to evaluate the word. If it knows the word it will tell us what does that word represent, otherwise it will tell us something like <code class="highlighter-rouge">NameError: name 'bazinga' is not defined</code>.</p>
+
+<p>Pay attention to what this is saying to us: The word <code class="highlighter-rouge">bazinga</code> is not defined. So if we want to teach Pixel Turtle this new word we must <strong>define</strong> this word. In MicroPython (or just Python) the way we define a word is by using another word we haven’t mentioned yet: <code class="highlighter-rouge">def</code>, which is short for define.</p>
+
+<p>For example if we want to create a word for drawing a square, first we need to know how to draw a square, it should be something like this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>That is a lot of code but we can teach Pixel Turtle that every time we say <code class="highlighter-rouge">square()</code> it will execute al those 8 instructions!</p>
+
+<p>The way to use <code class="highlighter-rouge">def</code> is like this: We say we are defining a word, then we say what is the word that we want to define, we make sure to explain this word is something we can execute and we describe what Pixel Turtle should do when we say the new word. It would look something like this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">square</span><span class="p">():</span>
+    <span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Notice that in Python, the way we say some block of code belongs or is inside another block of code is by using this left margin we call <strong>tabulation</strong>. So the way we say the lines of code belong to the definition of <code class="highlighter-rouge">square()</code> is by adding a margin to the left on all 8 lines of code. We can call <code class="highlighter-rouge">square()</code> anywhere <strong>after</strong> it’s defined.</p>
+
+<p>Although we can teach any word to Pixel Turtle, there are some tricks and tips to do it in a simple way to write and specially to read later. Yes, it’s really important that Pixel Turtle understand what to do but it’s even more important that we are able to read the code and understand what it does!</p>
+
+<h2 id="dont-repeat-yourself">Don’t Repeat Yourself</h2>
+
+<p>You can define words that uses other words you defined previously. Let’s take the <code class="highlighter-rouge">square()</code> example we used previously. You will notice we repeated the same 2 lines 4 times:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>We could name it a <code class="highlighter-rouge">corner()</code> and use it later inside <code class="highlighter-rouge">square()</code>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">corner</span><span class="p">():</span>
+    <span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">square</span><span class="p">():</span>
+    <span class="n">corner</span><span class="p">()</span>
+    <span class="n">corner</span><span class="p">()</span>
+    <span class="n">corner</span><span class="p">()</span>
+    <span class="n">corner</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>As a general rule, a good coder is lazy. Not lazy to do the dishes or lazy and waking up late but lazy in the sense of not enjoying to write the same code many times.</p>
+
+<p>We usually create words if we are writing exactly the same thing many times in our code. This is specially handy when you want to change what you wrote: Instead of fixing your code in many places, you can just change your word definition and every time the word is called it will have the correct definition!</p>
+
+<h2 id="pick-easy-and-clear-names">Pick Easy and Clear Names</h2>
+
+<p>Put names that are easy to understand or that describe well what the word does without having to read the definition. If you understand what a word means without having to read the definition, that word is great!</p>
+
+<p>Previously we create a word named <code class="highlighter-rouge">corner()</code> that makes the Pixel Turtle move <code class="highlighter-rouge">forward(2)</code> and turn <code class="highlighter-rouge">left(2)</code>. What if we want to create a <code class="highlighter-rouge">corner()</code> that turns <code class="highlighter-rouge">right(2)</code>? That makes me think <code class="highlighter-rouge">corner()</code> was a bad name because it doesn’t specify what direction this corner turns to. Instead we could do something like:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">corner_to_left</span><span class="p">():</span>
+    <span class="n">forward</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">square</span><span class="p">():</span>
+    <span class="n">corner_to_left</span><span class="p">()</span>
+    <span class="n">corner_to_left</span><span class="p">()</span>
+    <span class="n">corner_to_left</span><span class="p">()</span>
+    <span class="n">corner_to_left</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Notice that we can’t use spaces for defining words so we used <code class="highlighter-rouge">_</code> instead. We could have defined without spaces or <code class="highlighter-rouge">_</code> as well, I just found it easier to read but <code class="highlighter-rouge">cornertoleft()</code> would work equally well.</p>
+
+<h2 id="flexible-and-reusable-words">Flexible and Reusable Words</h2>
+
+<p>On previous examples we defined the word <code class="highlighter-rouge">square()</code> but if you think about, it actually defined a specific square with 3 pixels width and 3 pixels height. What if we want to make a smaller or a bigger square? We could easily define a <code class="highlighter-rouge">small_square()</code>, <code class="highlighter-rouge">huge_square()</code> or <code class="highlighter-rouge">2x2square()</code> but you see, we’ll soon have way to many very similar definitions.</p>
+
+<p>If you think about the words Pixel Turtle already know such as <code class="highlighter-rouge">forward()</code> or <code class="highlighter-rouge">left()</code> they all can have a number between the <code class="highlighter-rouge">()</code> that somehow changes how the word works. This number we put between the <code class="highlighter-rouge">()</code> is called a “parameter” or “argument”.</p>
+
+<p>To define a word that accepts arguments we just need to give it a name to the parameter and we can use it inside the definition. This is further explained on <a href="./naming-things-that-change.html">naming things that change</a> but the short explanation is: Whatever is the value you use when calling the word, it will know.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">corner_to_left</span><span class="p">(</span><span class="n">amount</span><span class="p">):</span>
+    <span class="n">forward</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="n">corner_to_left</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+    <span class="n">corner_to_left</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+    <span class="n">corner_to_left</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+    <span class="n">corner_to_left</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>When we call <code class="highlighter-rouge">square(4)</code> for example, Pixel Turtle will know that the <code class="highlighter-rouge">size</code> will be <code class="highlighter-rouge">4</code> and will call <code class="highlighter-rouge">corner_to_left()</code> with the value <code class="highlighter-rouge">4</code> as the parameter. We can call <code class="highlighter-rouge">square()</code> with many numbers as argument and it will draw as many different sizes of squares as we want.</p>
+
+<p>But what if we don’t use any arguments? It will definitely break saying <code class="highlighter-rouge">TypeError: function takes 1 position arguments but 0 were given</code>. That message is telling us that <code class="highlighter-rouge">square()</code> requires 1 argument but we haven’t given any. We either always call <code class="highlighter-rouge">square()</code> with an argument or whenever we are defining <code class="highlighter-rouge">square()</code> we say: If no arguments are given, this is the default value. That’s how we could do it:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">corner_to_left</span><span class="p">(</span><span class="n">amount</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">forward</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">corner_to_left</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+    <span class="n">corner_to_left</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+    <span class="n">corner_to_left</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+    <span class="n">corner_to_left</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+</code></pre></div></div>
 
         </div>
     </body>
