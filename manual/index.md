@@ -11,7 +11,7 @@ layout: default
 - [How to Install MicroPython](getting-started.html#install-micropython)
 - [How to Install and Use Pixel Kit MicroPython Libraries](getting-started.html#install-libraries)
 -->
-- [Using Flying Circus](getting-started.html#usin-flying-circus)
+- [Using Flying Circus](getting-started.html#using-flying-circus)
 
 ## Pixel Turtle Library
 
