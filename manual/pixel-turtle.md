@@ -5,7 +5,7 @@ layout: default
 
 ## Position and heading
 
-![](images/01_position_and_heading.gif)
+![](images/position_and_heading.gif)
 
 If you turn on your Pixel Kit and only see a green and a yellow pixel it's because you probably have the Pixel Turtle library installed and running on your Pixel Kit already! If that is not the case, check [How to Install and Use Pixel Kit MicroPython Libraries](getting-started.html#install-libraries).
 
@@ -13,7 +13,7 @@ If you did see the two pixels then imagine the green pixel as if it was a turtle
 
 ## Left and right
 
-![](images/02_turning.gif)
+![](images/turning.gif)
 
 You can turn the turtle around by using the commands `left()` and `right()`. If you just call `left()` or `right()` you will turn your turtle only by one “step”. If you call `left(2)` it’s the same as calling `left()` twice.
 
@@ -29,7 +29,7 @@ right(3)
 
 ## Forward and backward
 
-![](images/03_square.gif)
+![](images/forward.gif)
 
 If you call `forward()` or `backward()` the turtle will step forward or backwards in the current heading direction. If you call `forward(2)` it will give 2 steps forward, which is the same as calling `forward()`
 twice.
@@ -49,7 +49,7 @@ forward(4)
 
 ## Setting color
 
-![](images/04_colors.gif)
+![](images/set_color.gif)
 
 You can change your turtle to be another color by calling `setColor(blue)` for example. There are 8 colors ready for you to choose: `red`, `green`, `blue`, `yellow`, `cyan`, `purple`, `black`, `white`.
 
@@ -78,7 +78,7 @@ setColor(white)
 ```
 ## Pen up and pen down
 
-![](images/05_pen_up_and_down.gif)
+![](images/pen_up_pen_down.gif)
 
 You might have noticed that every time you move around with your turtle it leaves a trace behind. This is because the “pen is down”, which means wherever you go, you will be dragging the pen on the “floor”. If you want to move around without drawing you can call `penUp()` which will lift the pen until you call `penDown()` again.
 
@@ -103,7 +103,7 @@ forward(3)
 ```
 ## Clearing screen
 
-![](images/06_clear.gif)
+![](images/clear.gif)
 
 You can clear all the drawings you have made on screen by calling `clear()`.
 
@@ -119,7 +119,7 @@ clear()
 
 ## Move
 
-![](images/07_move.gif)
+![](images/move.gif)
 
 Teleport your pixel turtle `x` steps on the horizontal and `y` steps on the vertical based on your current pixel turtle positon. The steps can be negative numbers and numbers grow to the right and down.
 
@@ -136,7 +136,7 @@ move(0, -2)
 
 ## Move To
 
-![](images/08_moveto.gif)
+![](images/move_to.gif)
 
 Teleport your pixel turtle to the column `x` and line `y` of your Pixel Kit. The pixel on the top left corner is the row `0` and column `0`. The numbers grow to the right and down (the pixel on bottom right is row `7` and column `15`).
 
@@ -153,7 +153,7 @@ moveTo(5, 2)
 
 ## Show and Hide Pixel
 
-![](images/09_show_hide_pixel.gif)
+![](images/show_hide_pixel.gif)
 
 Makes the pixel invisible. You can still call all the commands normally and it the pixel turtle will behave just as if it was visible, including leaving a trace on the color you set.
 
@@ -171,7 +171,7 @@ showPixel()
 
 ## Show and Hide Heading
 
-![](images/10_show_hide_heading.gif)
+![](images/show_hide_heading.gif)
 
 Makes the heading invisible. You can still call all the commands normally and it the pixel turtle will behave just as if it was visible, including leaving a trace on the color you set.
 
@@ -189,7 +189,7 @@ showHeading()
 
 ## Setting Heading Color
 
-![](images/11_heading_color.gif)
+![](images/set_heading_color.gif)
 
 Imagine you want to make a drawing where the background is the same yellow as the heading or another color that makes really hard to see it. With `setHeadingColor()` you can set the heading color to another one so it makes a good contrast with your background.
 
