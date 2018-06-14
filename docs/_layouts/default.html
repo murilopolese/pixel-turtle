@@ -3,21 +3,21 @@
     <head>
         <meta charset="utf-8">
         <title>Pixel Kit MicroPython</title>
-        <link rel="stylesheet" href="/css/bariol.css">
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="{{ '/css/bariol.css' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
     </head>
     <body>
         <div class="wrapper">
             <div class="menu">
                 <div class="logo">
-                    <img src="/images/pixel_kit_mini.png" alt="">
+                    <img src="{{ '/images/pixel_kit_mini.png' | relative_url }}" alt="">
                 </div>
                 <ul class="list-inline">
-                    <li class="menu-item"><a href="/index.html">Index</a></li>
+                    <li class="menu-item"><a href="{{ '/index.html' | relative_url }}">Index</a></li>
                     <!-- <li class="menu-item"><a href="/index.html#getting-started">Getting started</a></li> -->
-                    <li class="menu-item"><a href="/index.html#pixel-turtle-library-guide">Pixel Turtle Guide</a></li>
-                    <li class="menu-item"><a href="/index.html#reference">Reference</a></li>
-                    <li class="menu-item"><a href="/index.html#tutorials">Tutorials</a></li>
+                    <li class="menu-item"><a href="{{ '/index.html#pixel-turtle-library-guide' | relative_url }}">Pixel Turtle Guide</a></li>
+                    <li class="menu-item"><a href="{{ '/index.html#reference' | relative_url }}">Reference</a></li>
+                    <li class="menu-item"><a href="{{ '/index.html#tutorials' | relative_url }}">Tutorials</a></li>
                 </ul>
             </div>
             {{ content }}
