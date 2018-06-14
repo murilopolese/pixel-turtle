@@ -2,18 +2,20 @@
 layout: default
 ---
 
-# Index
-
-## Getting Started
 
 <!-- -
+## Getting Started
 [What is MicroPython?](getting-started.html#what-is-micropython)
 - [How to Install MicroPython](getting-started.html#install-micropython)
 - [How to Install and Use Pixel Kit MicroPython Libraries](getting-started.html#install-libraries)
--->
 - [Using Flying Circus](getting-started.html#using-flying-circus)
+-->
 
-## Pixel Turtle Library
+![PixelKitImage](/images/pixel_kit.png)
+
+# Index
+
+## Pixel Turtle Library Guide
 
 - [Position and Heading](pixel-turtle.html#position-and-heading)
 - [Left and Right](pixel-turtle.html#left-and-right)
@@ -40,9 +42,21 @@ layout: default
 - [Pixel Colors](tutorials/pixel-turtle-colors.html)
 - [Pixel Geometry](tutorials/pixel-turtle-geometry.html)
 - [Teaching new words to Pixel](tutorials/new-words.html)
+
+Coming soon...
+
+- [Naming things that change](#)
+- [Lists of things](#)
+- [Repeating](#)
+- [Pixel Intelligence](#)
+- [Remote Controlled Pixel](#)
+- [Life Beyond Turtle](#)
+
+<!--
 - [Naming things that change](tutorials/naming-things-that-change.html)
 - [Lists of things](tutorials/lists-of-things.html)
 - [Repeating](tutorials/repeating.html)
 - [Pixel Intelligence](tutorials/pixel-turtle-intelligence.html)
 - [Remote Controlled Pixel](tutorials/remote-controlled-turtle.html)
 - [Life Beyond Turtle](tutorials/beyond-turtle.html)
+-->

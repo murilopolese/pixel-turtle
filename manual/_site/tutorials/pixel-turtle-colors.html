@@ -3,17 +3,19 @@
     <head>
         <meta charset="utf-8">
         <title>Pixel Kit MicroPython</title>
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/css/bariol.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         <div class="wrapper">
             <div class="menu">
+                <img class="logo" src="/images/kano-logo.svg" alt="">
                 <ul class="list-inline">
-                    <li><a href="/index.html">Index</a></li>
-                    <li><a href="/index.html#getting-started">Getting started</a></li>
-                    <li><a href="/index.html#pixel-turtle-library">Pixel Turtle</a></li>
-                    <li><a href="/index.html#reference">Reference</a></li>
-                    <li><a href="/index.html#tutorials">Tutorials</a></li>
+                    <li class="menu-item"><a href="/index.html">Index</a></li>
+                    <!-- <li class="menu-item"><a href="/index.html#getting-started">Getting started</a></li> -->
+                    <li class="menu-item"><a href="/index.html#pixel-turtle-library-guide">Pixel Turtle Guide</a></li>
+                    <li class="menu-item"><a href="/index.html#reference">Reference</a></li>
+                    <li class="menu-item"><a href="/index.html#tutorials">Tutorials</a></li>
                 </ul>
             </div>
             <h1 id="pixel-colors">Pixel Colors</h1>
@@ -32,6 +34,8 @@
 
 <p>If we look very very close to the LEDs on your Pixel Kit you might notice that there are 3 other tiny LEDs inside one RGB LED: a Red, a Green and a Blue. Every color will be a mix of how bright are those 3 tiny LEDs.</p>
 
+<p><img src="/images/pixel_kit_rgb_leds.png" alt="" /></p>
+
 <p>When you turn your Pixel Kit on we can see a green dot with a yellow dot on top of it. Looking closer to it we will notice that on the green dot you can only see one tiny LED on (obviously the green one) but on the yellow dot you will see not only that the tiny green LED is not as bright as the green and there is also a red one shining under it. So if I ask you how to make yellow what are the colors you think we should mix?</p>
 
 <h2 id="how-much-of-each-color">How Much of Each Color?</h2>
@@ -39,6 +43,8 @@
 <p>Now that we know we can mix red, green and blue there is one question left? How can we describe how much of each color should we add to our color? To begin with we need to understand that Pixel Turtle doesn’t understand if we say “a tiny bit”, “a little bit more” or “almost nothing” but it is really good with numbers! But what numbers? Can we use any numbers we like? Nope.</p>
 
 <p>Pixel Turtle can only make colors with numbers from <code class="highlighter-rouge">0</code> to <code class="highlighter-rouge">255</code> and to be honest it doesn’t like any numbers above <code class="highlighter-rouge">20</code> so we’ll be creating colors with a mix of red, green and blue and we’ll measure how much of each color with numbers from <code class="highlighter-rouge">0</code> to <code class="highlighter-rouge">20</code>. For example I like <code class="highlighter-rouge">5</code> for red, <code class="highlighter-rouge">10</code> for green and <code class="highlighter-rouge">12</code> for blue. But how do we tell the Pixel Turtle we want that color?</p>
+
+<p><img src="/images/pixel_kit_mixing_colors.png" alt="" /></p>
 
 <h2 id="creating-pixel-colors">Creating Pixel Colors</h2>
 
@@ -51,6 +57,8 @@
 <p>Notice that we put the numbers in order, first red then green and finally blue, separated by <code class="highlighter-rouge">,</code> and wrapped on <code class="highlighter-rouge">[]</code>. More on that on a <a href="./list-of-things.html">different tutorial</a>.</p>
 
 <p>What color is this and what tiny LEDs turn on for that color? Can you figure out how to make your favorite color?</p>
+
+<p><img src="/images/pixel_kit_colors.png" alt="" /></p>
 
         </div>
     </body>

@@ -18,6 +18,8 @@ Instead of buckets of colors we have something called "RGB LEDs" (the white squa
 
 If we look very very close to the LEDs on your Pixel Kit you might notice that there are 3 other tiny LEDs inside one RGB LED: a Red, a Green and a Blue. Every color will be a mix of how bright are those 3 tiny LEDs.
 
+![](/images/pixel_kit_rgb_leds.png)
+
 When you turn your Pixel Kit on we can see a green dot with a yellow dot on top of it. Looking closer to it we will notice that on the green dot you can only see one tiny LED on (obviously the green one) but on the yellow dot you will see not only that the tiny green LED is not as bright as the green and there is also a red one shining under it. So if I ask you how to make yellow what are the colors you think we should mix?
 
 ## How Much of Each Color?
@@ -25,6 +27,8 @@ When you turn your Pixel Kit on we can see a green dot with a yellow dot on top 
 Now that we know we can mix red, green and blue there is one question left? How can we describe how much of each color should we add to our color? To begin with we need to understand that Pixel Turtle doesn't understand if we say "a tiny bit", "a little bit more" or "almost nothing" but it is really good with numbers! But what numbers? Can we use any numbers we like? Nope.
 
 Pixel Turtle can only make colors with numbers from `0` to `255` and to be honest it doesn't like any numbers above `20` so we'll be creating colors with a mix of red, green and blue and we'll measure how much of each color with numbers from `0` to `20`. For example I like `5` for red, `10` for green and `12` for blue. But how do we tell the Pixel Turtle we want that color?
+
+![](/images/pixel_kit_mixing_colors.png)
 
 ## Creating Pixel Colors
 
@@ -38,3 +42,5 @@ setColor([5, 10, 12])
 Notice that we put the numbers in order, first red then green and finally blue, separated by `,` and wrapped on `[]`. More on that on a [different tutorial](./list-of-things.html).
 
 What color is this and what tiny LEDs turn on for that color? Can you figure out how to make your favorite color?
+
+![](/images/pixel_kit_colors.png)

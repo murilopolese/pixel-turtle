@@ -1,15 +1,17 @@
 ---
 layout: default
 ---
-# Pixel Turtle
+# Pixel Turtle Library Guide
 
 ## Position and heading
 
 ![](images/position_and_heading.gif)
 
-If you turn on your Pixel Kit and only see a green and a yellow pixel it's because you probably have the Pixel Turtle library installed and running on your Pixel Kit already! If that is not the case, check [How to Install and Use Pixel Kit MicroPython Libraries](getting-started.html#install-libraries).
+If you turn on your Pixel Kit and only see a green and a yellow pixel it's because you probably have the Pixel Turtle library installed and running on your Pixel Kit already!
 
-If you did see the two pixels then imagine the green pixel as if it was a turtle seen from above and the yellow pixel is where the turtle is heading for.
+<!-- If that is not the case, check [How to Install and Use Pixel Kit MicroPython Libraries](getting-started.html#install-libraries). -->
+
+Imagine the green pixel as if it was a turtle seen from above and the yellow pixel is where the turtle is heading for.
 
 ## Left and right
 
