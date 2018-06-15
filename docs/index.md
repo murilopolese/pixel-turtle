@@ -42,13 +42,12 @@ layout: default
 - [Pixel Colors](tutorials/pixel-turtle-colors.html)
 - [Pixel Geometry](tutorials/pixel-turtle-geometry.html)
 - [Teaching new words to Pixel](tutorials/new-words.html)
+- [Naming things that change](tutorials/naming-things-that-change.html)
 
 Coming soon...
 
-- [Naming things that change](#)
-- [Lists of things](#)
-- [Repeating](#)
 - [Pixel Intelligence](#)
+- [Repeating](#)
 - [Remote Controlled Pixel](#)
 - [Life Beyond Turtle](#)
 
