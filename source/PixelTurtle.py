@@ -178,6 +178,8 @@ def getX():
     return cursor[0]
 def getY():
     return cursor[1]
+def getHeading():
+    return heading
 
 # Aliases
 sc = setColor

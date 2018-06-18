@@ -15,7 +15,7 @@ layout: default
 
 # Index
 
-## Pixel Turtle Library Guide
+## Pixel Turtle Guide
 
 - [Position and Heading](pixel-turtle.html#position-and-heading)
 - [Left and Right](pixel-turtle.html#left-and-right)
@@ -30,11 +30,6 @@ layout: default
 - [Setting Heading Color](pixel-turtle.html#setting-heading-color)
 - [Get X and Y](pixel-turtle.html#get-x-and-y)
 - [Aliases](pixel-turtle.html#aliases)
-
-## Reference
-
-- [Pixel Turtle List of Commands](reference/pixel-turtle.html)
-- [Pixel Kit Library List of Commands](reference/pixel-kit.html)
 
 ## Tutorials
 
@@ -51,11 +46,7 @@ Coming soon...
 - [Remote Controlled Pixel](#)
 - [Life Beyond Turtle](#)
 
-<!--
-- [Naming things that change](tutorials/naming-things-that-change.html)
-- [Lists of things](tutorials/lists-of-things.html)
-- [Repeating](tutorials/repeating.html)
-- [Pixel Intelligence](tutorials/pixel-turtle-intelligence.html)
-- [Remote Controlled Pixel](tutorials/remote-controlled-turtle.html)
-- [Life Beyond Turtle](tutorials/beyond-turtle.html)
--->
+## Reference
+
+- [Pixel Turtle List of Commands](reference/pixel-turtle.html)
+- [Pixel Kit Library List of Commands](reference/pixel-kit.html)
