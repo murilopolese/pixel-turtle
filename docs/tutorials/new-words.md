@@ -94,7 +94,7 @@ def square():
     corner_to_left()
 ```
 
-Notice that we can't use spaces for defining words so we used `_` instead. We could have defined without spaces or `_` as well, I just found it easier to read but `cornertoleft()` would work equally well.
+Notice that we can't use spaces for defining words so we used `_` instead. We could have defined without spaces or `_` as well, sometimes it's just easier to read when we separate the words but `cornertoleft()` would work equally well.
 
 ## Flexible and Reusable Words
 

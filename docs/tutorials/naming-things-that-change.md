@@ -12,11 +12,11 @@ Although they can be difficult questions to answer, they can be answered. And ac
 
 When we name things we add a feature to that thing that is very important: We are able to talk about it without having to describe it. For example, imagine you are with friends and one of them is wearing something on top of their head, it's made out of cloth, probably cotton, it has one button on top, a rigid surface sticking out of half of the bottom borders and it's green.
 
-Now, imagine that you have to ask your friend where they got this thing made out of cloth, probably cotton, with a button... Well, we probably don't want to describe how things are every time you want to refer to it, therefore we can create shortcuts for talking about it: we name it. Let's agree that the thing on your friend's head is a hat. Then we could easily ask: Where did you get that hat?
+Now, imagine that you have to ask your friend where they got this "green thing made out of cloth, probably cotton, with a button on top of your friend's head"... Well, we probably don't want to describe how things are every time you want to refer to it, therefore we can create shortcuts for talking about it: we name it. Let's agree that we'll call the thing on your friend's head a hat. Then we could easily ask: Where did you get that hat?
 
-But what are we describing and referring with Pixel Turtle? Mostly numbers. But why, numbers, why? Because unfortunately that is all Pixel Turtle is born knowing. Everything else we want it to know, we have to teach it.
+But what exactly are we naming with Pixel Turtle? Mostly numbers. But why, numbers, why? Because unfortunately that is all Pixel Turtle is born knowing. Everything else we want it to know, we have to teach it.
 
-We are not born knowing to talk, but we can scream. How we transform scream into talk is what we know as "learn to talk". You would be shocked with the amount of things Pixel Turtle can learn with just numbers and names.
+We are not born knowing to talk, but we can scream. How we transform scream into words is what we know as "learn to talk". You would be shocked with the amount of things Pixel Turtle can learn with just numbers and names.
 
 ## Giving names in MicroPython
 
@@ -38,9 +38,9 @@ As time goes by we know the sky changes its color to black. But hey, have you no
 sky = black
 ```
 
-You could also tell Pixel Kit how many stars are on the sky, you could tell if it's night or that your name is "Banana Banana". To facilitate talking about naming thing we usually there is a name and a value. In our case the name is `sky` and sometimes its value is `white`, sometimes is `black`.
+You could also tell Pixel Kit how many stars are on the sky, you could tell if it's night or that your name is "Banana Banana". To facilitate talking about naming things we usually say there is a name and a value. In our case the name is `sky` and everything else we say the `sky` is it's the value: Sometimes its value is `white`, sometimes is `black`.
 
-It's because there are things that can change their **values** it's also common to talk about the **names** as **variables**.
+It's because the **values** can change it's also common to talk about the **names** as **variables**.
 
 ## What can we name?
 

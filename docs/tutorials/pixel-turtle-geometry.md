@@ -76,7 +76,7 @@ Well, almost any amount! Check it out what happens when you turn `left(8)` or `r
 
 We can keep moving and turning as much as we like to the left, right, up or down but there is something special that happens when the Pixel Turtle makes it to where the drawing began: It closes a shape. Closed shapes are the next simplest thing Pixel Turtle can make.
 
-The easiest way to close a shape is by repeating a simple set of instructions of moving `forward()` and turning `left()`. For example, execute the following set of instructions until it closes the drawing:
+The easiest way to close a shape is by repeating a simple set of instructions of moving `forward()` and turning `left()`. For example, execute the following set of instructions and check what happens:
 
 ```python
 forward()
