@@ -1,8 +1,8 @@
 def rectangle(width=1, height=1):
     for i in range(0, 2):
-        forward(width-1)
-        left(2)
         forward(height-1)
+        left(2)
+        forward(width-1)
         left(2)
 
 def square(size=1):
@@ -45,3 +45,21 @@ def fillRectangle(width=1, height=1):
             left(2)
             forward()
             left(2)
+
+clear()
+
+setColor(cyan)
+moveTo(3, 5)
+rectangle(3, 5)
+
+setColor(purple)
+move(4, 2)
+triangle(3)
+
+setColor(red)
+move(4, -5)
+circle(2)
+
+setColor(yellow)
+move(1, 4)
+fillRectangle(3, 3)
