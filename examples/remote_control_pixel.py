@@ -1,16 +1,8 @@
 import PixelKit as kit
 from time import sleep
 
-black = [0, 0, 0]
-red = [10, 0, 0]
-green = [0, 10, 0]
-blue = [0, 0, 10]
-yellow = [10, 10, 0]
-cyan = [0, 10, 10]
-purple = [10, 0, 10]
-
 colors = [black, red, yellow, green, cyan, blue, purple]
-color = 1
+color = 3
 setColor(colors[color])
 
 def changeColor():
