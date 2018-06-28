@@ -11,7 +11,7 @@ layout: default
 - [Using Flying Circus](getting-started.html#using-flying-circus)
 -->
 
-![PixelKitImage]({{ '/images/pixel_kit.png' | relative_url }})
+![PixelKitImage]({{ './images/pixel_kit.png' | absolute_url }})
 
 # Index
 
