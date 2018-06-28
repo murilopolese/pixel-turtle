@@ -30,8 +30,15 @@ But what if we want to have a variable with the list of colors we want to draw? 
 colors = [white, yellow, cyan, purple, orange]
 ```
 
-It’s important to remember that we can create variables with many different values: Numbers, words, array, etc...
+It’s important to remember that we can create variables with many different values: Numbers, words, array, etc:
 
+```python
+width = 16
+height = 8
+orange = [10, 5, 0]
+name = "Banana Banana"
+colors = [white, black, orange]
+```
 
 ## Conditions
 
