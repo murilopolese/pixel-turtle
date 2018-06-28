@@ -1,0 +1,16 @@
+defaults:
+    -
+        scope:
+            path: "/"
+        values:
+            basepath: "./"
+    -
+        scope:
+            path: "topics"
+        values:
+            basepath: "../"
+    -
+        scope:
+            path: "reference"
+        values:
+            basepath: "../"

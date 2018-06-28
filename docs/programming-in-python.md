@@ -8,6 +8,8 @@ Pixel Turtle is a library written in MicroPython. MicroPython is a simplified ve
 
 We can do almost anything with Python, it has many features, libraries and a lot of people out there are writing programs, games, animations, websites with Python. But to start understanding its power we'll go through 4 very important and powerful ideas that we'll be using as tools to draw and interact with Pixel Kit! They are **variables**, **conditions**, **repetition** and **functions**.
 
+If you read and don't understand, don't worry: ***The best way to understand those ideas is trying to use them on a project***!
+
 ## Variables
 
 Variables are like drawers in a shelf. You can put almost anything on this drawer and you can give it a label as well. So let’s imagine you want to put your favorite color on a drawer named `orange`, that is how you do it:

@@ -2,8 +2,7 @@
 layout: default
 ---
 
-
-<!-- -
+<!--
 ## Getting Started
 [What is MicroPython?](getting-started.html#what-is-micropython)
 - [How to Install MicroPython](getting-started.html#install-micropython)
@@ -11,7 +10,7 @@ layout: default
 - [Using Flying Circus](getting-started.html#using-flying-circus)
 -->
 
-![PixelKitImage]({{ './images/pixel_kit.png' | absolute_url }})
+![PixelKitImage](./images/pixel_kit.png)
 
 # Index
 
