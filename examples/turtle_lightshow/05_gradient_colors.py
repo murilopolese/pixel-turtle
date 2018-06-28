@@ -8,7 +8,8 @@ clear()
 moveTo(0, 0)
 
 for i in range(0, 8):
-    setColor([12-i, 0, 8+i])
+    color = [12-i, 0, 8+i]
+    setColor(color)
     backward(7)
     move(1, 0)
     forward(7)

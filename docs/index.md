@@ -31,22 +31,29 @@ layout: default
 - [Get X and Y](pixel-turtle.html#get-x-and-y)
 - [Aliases](pixel-turtle.html#aliases)
 
-## Tutorials
-
-- [Pixel Wandering](tutorials/pixel-turtle-wandering.html)
-- [Pixel Colors](tutorials/pixel-turtle-colors.html)
-- [Pixel Geometry](tutorials/pixel-turtle-geometry.html)
-- [Teaching new words to Pixel](tutorials/new-words.html)
-- [Naming things that change](tutorials/naming-things-that-change.html)
-
-Coming soon...
-
-- [Pixel Intelligence](#)
-- [Repeating](#)
-- [Remote Controlled Pixel](#)
-- [Life Beyond Turtle](#)
-
 ## Reference
 
 - [Pixel Turtle List of Commands](reference/pixel-turtle.html)
 - [Pixel Kit Library List of Commands](reference/pixel-kit.html)
+
+## Programming in Python
+
+- [Variables](programming-in-python.html#variables)
+- [Conditions](programming-in-python.html#conditions)
+- [Repetition](programming-in-python.html#repetition)
+- [Functions](programming-in-python.html#functions)
+
+## Topics
+
+- [Pixel Wandering](topics/pixel-turtle-wandering.html)
+- [Pixel Colors](topics/pixel-turtle-colors.html)
+- [Pixel Geometry](topics/pixel-turtle-geometry.html)
+- [Teaching new words to Pixel](topics/new-words.html)
+- [Naming things that change](topics/naming-things-that-change.html)
+
+<!-- Coming soon...
+
+- [Pixel Intelligence](#)
+- [Repeating](#)
+- [Remote Controlled Pixel](#)
+- [Life Beyond Turtle](#) -->

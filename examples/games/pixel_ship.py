@@ -167,9 +167,11 @@ def loop():
     renderMainShip()
     renderEnemies()
 
-while True:
-    t += 1
-    kit.checkControls()
-    loop()
-    kit.render()
-    sleep(0.001)
+def start():
+    global t
+    while True:
+        t += 1
+        kit.checkControls()
+        loop()
+        kit.render()
+        sleep(0.001)
