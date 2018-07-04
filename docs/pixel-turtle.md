@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Pixel Turtle Library Guide
+# Pixel Turtle Guide
 
 ## Position and heading
 

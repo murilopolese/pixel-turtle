@@ -30,6 +30,14 @@ layout: default
 - [Get X and Y](pixel-turtle.html#get-x-and-y)
 - [Aliases](pixel-turtle.html#aliases)
 
+## Pixel Kit Guide
+
+- [Setting and Rendering](pixel-kit.html#setting-and-rendering)
+- [Setting Pixels](pixel-kit.html#setting-pixels)
+- [Setting Background and Clearing screen](pixel-kit.html#setting-background-and-clearing-screen)
+- [Buttons and Dial values](pixel-kit.html#buttons-and-dial-values)
+- [Events](pixel-kit.html#events)
+
 ## Reference
 
 - [Pixel Turtle List of Commands](reference/pixel-turtle.html)
